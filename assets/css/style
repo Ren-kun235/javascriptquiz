@@ -5,3 +5,8 @@
 body header h1 {
     color: magenta;
 }
+
+body main p{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
