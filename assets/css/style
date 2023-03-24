@@ -1,0 +1,7 @@
+* {
+    background-color: black;
+}
+
+body header h1 {
+    color: magenta;
+}
