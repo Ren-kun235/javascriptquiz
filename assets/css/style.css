@@ -1,3 +1,19 @@
 * {
-    background-color: magenta;
+    background-color: gray;
+}
+
+h1 {
+    color: magenta;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+body main {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    text-decoration: solid;
 }
