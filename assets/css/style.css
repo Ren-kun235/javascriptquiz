@@ -7,13 +7,29 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     text-align: center;
+    font-size: 75px;
 }
 
 body main {
     text-align: center;
 }
 
+body main p {
+    font-size: 120%;
+}
+
+span {
+    text-decoration: underline;
+}
+
 button {
     margin: 10px;
     text-decoration: solid;
+    background-color: green;
+    padding: 12px 28px;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: white;
 }
