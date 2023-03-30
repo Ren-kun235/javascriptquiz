@@ -11,6 +11,7 @@ h1 {
     font-weight: bold;
     text-align: center;
     font-size: 75px;
+    padding: 50px;
 }
 
 body main {
@@ -19,6 +20,7 @@ body main {
 
 body main p {
     font-size: 120%;
+    padding: 50px;
 }
 
 span {

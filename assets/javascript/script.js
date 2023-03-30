@@ -13,28 +13,31 @@ var timer = 90;
 
 
 function startTimer() {
+    var timeLeft = 5;
     timer = setInterval(function() {
-        var timeLeft = 90;
 
         if(timeLeft > 1) {
             timerEl.textContent = timeLeft + ' seconds remaining';
-
+            
             timeLeft--;
         } else if (timeLeft === 1) {
             timerEl.textContent = timeLeft + ' second remaining';
-
+            
             timeLeft--;
         } else {
             timerEl.textContent = '';
 
             clearInterval(timer);
 
-            displayMessage();
+            gameOver();
         }
 
     }, 1000)
 }
 
-function displayMessage() {
+startTimer();
 
+function gameOver() {
+    console.log('gameOver');
 }
+
