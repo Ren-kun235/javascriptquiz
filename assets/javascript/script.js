@@ -5,18 +5,36 @@ var corrEl = document.querySelector('#correct');
 var incorrEl = document.querySelector('#incorrect');
 
 var numBlanks = 0;
-var corrCounter = 0;
-var incorrCounter = 0;
+var corrCount = 0;
+var incorrCount = 0;
 var timer = 90;
-var timerCount;
+// var timerCount = math.floor((timeleft % (1000 * 60)) / 1000);
+
+
 
 function startTimer() {
     timer = setInterval(function() {
-        timerEl. = timerCount;
-        if(corrCounter) {
-            timer++;
+        var timeLeft = 90;
+
+        if(timeLeft > 1) {
+            timerEl.textContent = timeLeft + ' seconds remaining';
+
+            timeLeft--;
+        } else if (timeLeft === 1) {
+            timerEl.textContent = timeLeft + ' second remaining';
+
+            timeLeft--;
         } else {
-            timer--;
+            timerEl.textContent = '';
+
+            clearInterval(timer);
+
+            displayMessage();
         }
+
     }, 1000)
+}
+
+function displayMessage() {
+
 }
