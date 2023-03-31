@@ -5,13 +5,22 @@
     box-sizing: border-box;
 }
 
-h1 {
-    color: #E363EA;
+h1, h2 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+}
+
+h1 {
+    color: #E363EA;
     text-align: center;
     font-size: 75px;
     padding: 50px;
+}
+
+h2 {
+    color: purple;
+    font-size: 35px;
+    padding: 20px;
 }
 
 body main {
