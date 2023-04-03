@@ -49,6 +49,11 @@ button:hover {
     background-color: white;
 }
 
+#timer {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .hide {
     display: none;
 }
