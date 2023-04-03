@@ -49,12 +49,6 @@ startBtnEl.addEventListener("click", startTimer);
 
 function startTimer() {
 
-    if(startPage === "display") {
-        timerEl.textContent = "display = none";
-    } else {
-        timerEl.textContent = timer;
-    }
-
     var timeLeft = 60;
     var timer = setInterval(function() {
 
