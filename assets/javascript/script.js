@@ -3,11 +3,13 @@ var startPage = document.querySelector("#startPage");
 var startQuiz = document.querySelector("#question1");
 var highScrBtnEl = document.querySelector("#highScr");
 var highScrDisplay = document.querySelector("#highScores");
+var clearBtnEl = document.querySelector("#clearScr")
+var clearScr = [];
 var backToStart = document.querySelector("#backToStart");
 
 var question1El = document.querySelector("#question1");
 
-var timerEl = document.querySelector('#timer');
+var timerEl = document.querySelector("#timer");
 // var corrEl = document.querySelector('#correct');
 // var incorrEl = document.querySelector('#incorrect');
 
@@ -27,6 +29,8 @@ function highScr() {
     startPage.classList.add("hide");
 }
 
+// clearHighScr.addEventListener("click", clearHighScr)
+
 backToStart.addEventListener('click', backStart);
 
 function backStart() {
@@ -39,18 +43,27 @@ function backStart() {
 
 
 
+startBtnEl.addEventListener("click", startTimer);
+
 
 
 function startTimer() {
-    var timeLeft = 90;
-    timer = setInterval(function() {
+
+    if(startPage === "display") {
+        timerEl.textContent = "display = none";
+    } else {
+        timerEl.textContent = timer;
+    }
+
+    var timeLeft = 60;
+    var timer = setInterval(function() {
 
         if(timeLeft > 1) {
-            timerEl.textContent = timeLeft + ' seconds remaining';
+            timerEl.textContent = timeLeft + " seconds remaining";
             
             timeLeft--;
         } else if (timeLeft === 1) {
-            timerEl.textContent = timeLeft + ' second remaining';
+            timerEl.textContent = timeLeft + " second remaining";
             
             timeLeft--;
         } else {

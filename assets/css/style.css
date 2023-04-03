@@ -52,6 +52,12 @@ button:hover {
 #timer {
     display: flex;
     justify-content: flex-end;
+    padding: 12px;
+}
+
+#resign {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .hide {
