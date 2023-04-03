@@ -23,7 +23,7 @@ h2 {
     padding: 20px;
 }
 
-body main {
+body {
     text-align: center;
 }
 
@@ -47,4 +47,8 @@ button {
 
 button:hover {
     background-color: white;
+}
+
+.hide {
+    display: none;
 }
