@@ -46,7 +46,6 @@ function backStart() {
 startBtnEl.addEventListener("click", startTimer);
 
 
-
 function startTimer() {
 
     var timeLeft = 60;
@@ -70,8 +69,6 @@ function startTimer() {
 
     }, 1000)
 }
-
-startTimer();
 
 function gameOver() {
     console.log('gameOver');
